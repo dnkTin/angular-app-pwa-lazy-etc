@@ -13,6 +13,11 @@ const routes: Routes = [
       import("./orders/orders.module").then(m => m.OrdersModule)
   },
   {
+    path: 'forms',
+    loadChildren: () => 
+      import('./formMdl/formMdl.module').then(m => m.FormMdlModule)
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full'

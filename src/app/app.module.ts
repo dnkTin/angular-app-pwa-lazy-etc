@@ -8,11 +8,12 @@ import { HttpClientModule } from "@angular/common/http";
 import {
   MatToolbarModule,
   MatCardModule,
-  MatButtonModule
+  MatButtonModule,
+  MatTabsModule
 } from "@angular/material";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-const materialModule = [MatToolbarModule, MatCardModule, MatButtonModule];
+const materialModule = [MatToolbarModule, MatCardModule, MatButtonModule, MatTabsModule];
 @NgModule({
   declarations: [AppComponent],
   imports: [

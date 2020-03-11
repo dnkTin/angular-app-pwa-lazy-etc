@@ -1,0 +1,18 @@
+<p>form-react works!</p>
+<label for="">
+  Favorite Color: 
+  <input class="input-template" type="text" [(ngModel)]="favoriteColor">
+</label>
+<p>{{favoriteColor}}</p>
+
+
+<label for="">
+  <input class="input-control" type="text" [formControl]="favoriteColorControl">
+</label>
+<p>
+  Value: {{favoriteColorControl.value}}
+</p>
+<button (click)="updateName()">Update value</button>
+
+<hr>
+<h1>Form Group</h1>

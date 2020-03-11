@@ -1,0 +1,29 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <label for=""
+    >First Name:<input type="text" formControlName="firstName"
+  /></label>
+  <label for=""
+    >Last Name:<input type="text" formControlName="lastName"
+  /></label>
+
+  <div formGroupName="address">
+    <h3>Address</h3>
+    <label for=""
+      >Street:
+      <input type="text" formControlName="street" />
+    </label>
+
+    <label for=""
+      >State
+      <input type="text" formControlName="state" />
+    </label>
+
+    <label for=""
+      >Zip Code:
+      <input type="text" formControlName="zip" />
+    </label>
+  </div>
+  <button type="submit" [disabled]="!profileForm.valid">Submit Form</button>
+</form>
+
+<button (click)="updateProfile()">updateProfile</button>
