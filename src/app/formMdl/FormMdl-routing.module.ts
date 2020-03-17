@@ -7,6 +7,7 @@ import { FormBuilderComponent } from "./components/form-builder/form-builder.com
 import { DynamicFormArraysComponent } from "./components/dynamic-form-arrays/dynamic-form-arrays.component";
 import { TmplateFormComponent } from "./components/tmplate-form/tmplate-form.component";
 import { HeroFormReactiveComponent } from './components/hero-form-reactive/hero-form-reactive.component';
+import { DynamicFrmComponent } from './components/dynamic-frm/dynamic-frm.component';
 
 const routes: Routes = [
   { path: "", component: FormReactComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: "dynamicControl", component: DynamicFormArraysComponent },
   { path: "tmplateForm", component: TmplateFormComponent },
   { path: "hero-reactive", component: HeroFormReactiveComponent },
+  { path: "dynamic", component: DynamicFrmComponent },
 ];
 
 @NgModule({

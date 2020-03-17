@@ -10,6 +10,10 @@ import { DynamicFormArraysComponent } from "./components/dynamic-form-arrays/dyn
 import { TmplateFormComponent } from './components/tmplate-form/tmplate-form.component';
 import { CustomersComponent } from '../customers/customers.component';
 import { HeroFormReactiveComponent } from './components/hero-form-reactive/hero-form-reactive.component';
+import { DynamicFrmComponent } from './components/dynamic-frm/dynamic-frm.component';
+import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './components/dynamic-form-question/dynamic-form-question.component';
+import { QuestionControlService } from '../services/question-control.service';
 const formMdls = [
   FormMdlRoutingModule,
   ReactiveFormsModule,
@@ -28,11 +32,17 @@ const components = [
 @NgModule({
   declarations: [
     ...components,
-    HeroFormReactiveComponent
+    HeroFormReactiveComponent,
+    DynamicFrmComponent,
+    DynamicFormComponent,
+    DynamicFormQuestionComponent
   ],
   imports: [
     CommonModule,
     ...formMdls,
+  ],
+  providers: [
+    QuestionControlService
   ]
 })
 export class FormMdlModule {}

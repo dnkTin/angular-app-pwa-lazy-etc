@@ -21,7 +21,8 @@ const routes: Routes = [
     path: '',
     redirectTo: '',
     pathMatch: 'full'
-  }
+  },
+  { path: 'pagi', loadChildren: () => import('./pagi/pagi.module').then(m => m.PagiModule) }
 ];
 
 @NgModule({
